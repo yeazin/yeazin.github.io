@@ -7,7 +7,7 @@ function APIFetch(){
       return res.json()
     })
     .then((data)=>{
-      console.log(data);
+//       console.log(data);
       document.getElementById('name').innerHTML = data.name;
       document.getElementById('img').src = data.avatar_url;
       document.getElementById("username").innerHTML = '@'+data.login;
